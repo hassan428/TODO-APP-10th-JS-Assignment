@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/010/008/086/non_2x/background-dimension-3d-graphic-message-board-for-text-and-message-design-line-shadow-for-modern-web-design-free-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+p{
+    display: inline-block;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: rgb(0, 77, 201);
+    background-color: rgb(250, 173, 86);
+    border-left: 5px solid rgb(194, 103, 0);
+    border-top: 5px solid rgb(194, 103, 0);
+    border-right: 5px solid rgb(0, 77, 201);
+    border-bottom: 5px solid rgb(0, 77, 201);
+    box-shadow: 5px 10px 20px rgb(252, 135, 2);
+    text-shadow: 2px 2px 1px rgb(176, 190, 246);
+}
+
+
+input{
+    border: 2px solid rgb(0, 0, 0);
+    display: inline;
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    padding: 5px 10px;
+    text-align: start;
+    width: 35%;
+    border-radius: 30px;
+    background-color: rgb(252, 230, 181);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+
+}
+
+
+input:hover{
+    border: 3px solid rgb(0, 0, 0);
+    padding: 6px 11px;
+    border-radius: 30px;
+    background-color: rgb(250, 215, 141);
+}
+
+input:focus{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: rgb(255, 238, 200);
+}
+
+
+.btn{
+    color: rgb(0, 92, 239);
+    background-color: rgb(250, 224, 195);
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(150, 80, 0);
+    border-right: 2px solid rgb(0, 77, 201);
+    box-shadow: 0px 0px 20px rgb(60, 97, 246);
+    border-bottom: 2px solid rgb(0, 77, 201);
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+
+.btn:hover{
+    background-color: rgb(255, 215, 169);
+    border-left: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid rgb(150, 80, 0);
+    border-right: 3px solid rgb(0, 77, 201);
+    border-bottom: 3px solid rgb(0, 77, 201);
+    box-shadow: 0px 0px 20px rgb(4, 54, 255);
+    padding: 6px 11px;
+}
+
+.btn:active{
+    background-color: rgb(0, 239, 8);
+    padding: 7px 12px;
+}
+
+.delete:active{
+    background-color: rgb(255, 60, 42);
+    color: white;
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+    width: 53%;
+}
+
+li{
+    text-align: start;
+    color: black;
+    background-color: rgb(254, 227, 181);
+    border-radius: 30px;
+    padding: 5px 13px 5px 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    margin-right: 160px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.btns{
+    color: rgb(0, 92, 239);
+    background-color: rgb(250, 224, 195);
+    border-left: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(150, 80, 0);
+    border-right: 2px solid rgb(0, 77, 201);
+    box-shadow: 0px 0px 20px rgb(67, 46, 255);
+    border-bottom: 2px solid rgb(0, 77, 201);
+    border-radius: 50px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 68%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.btnDisplay{
+    position: absolute;
+    left: 61%;
+}
+
+.btns:hover{
+    background-color: rgb(255, 228, 198);
+    border-left: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid rgb(150, 80, 0);
+    border-right: 3px solid rgb(0, 77, 201);
+    border-bottom: 3px solid rgb(0, 77, 201);
+    box-shadow: 0px 0px 20px rgb(4, 54, 255);
+    padding: 6px 11px;
+}
+
+.btns:active{
+    background-color: rgb(255, 60, 42);
+    color: white;
+    padding: 7px 12px;
+}
+
+
+
+
+
+
+@media only screen  and (min-width: 1350px){
+    
+    p{
+        font-size: 50px;
+        margin: 40px;
+        margin-bottom: 50px;
+        padding: 10px 15px;
+    }
+    
+    
+    input{
+        margin: 15px;
+        margin-bottom: 40px;
+        margin-right: 0;
+        padding: 8px 15px;
+        width: 40%;
+        font-size: x-large;
+    
+    }
+    
+    
+    input:hover{
+        padding: 7px 16px;
+    }
+    
+    input:focus{
+        padding: 8px 22px;
+    }
+    
+    
+    .btn{
+        padding: 6px 18px;
+        margin-left: 8px;
+        font-size: x-large;
+    }
+    
+    
+    .btn:hover{
+        padding: 7px 19px;
+    }
+    
+    .btn:active{
+        padding: 8px 20px;
+    }
+        
+    ul{
+        width: 59%;
+    }
+    
+    li{
+        padding: 8px 15px 8px 18px;
+        font-size: x-large;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-right: 140px;
+    }
+    
+    .btns{
+        position: absolute;
+        left: 71%;
+        padding: 6px 18px;
+        font-size: x-large;
+    }
+    
+
+    .btnDisplay{
+        position: absolute;
+        left: 63.5%;
+    }
+    
+    .btns:hover{
+        padding: 7px 19px;
+    }
+    
+    .btns:active{
+        padding: 8px 20px;
+    }
+    
+} 
+
+
+
+
+
+
+
+  @media only screen  and (max-width: 768px){
+    
+    p{
+        font-size: 30px;
+        margin: 30px;
+        margin-bottom: 30px;
+        padding: 8px 12px;
+    }
+    
+    
+    input{
+        margin: 10px;
+        margin-bottom: 30px;
+        margin-right: 0;
+        padding: 5px 10px;
+        width: 40%;
+        font-size: medium;
+    
+    }
+    
+    
+    input:hover{
+        padding: 5px 11px;
+    }
+    
+    input:focus{
+        padding: 5px 18px;
+    }
+    
+    
+    .btn{
+        padding: 5px 10px;
+        margin-left: 5px;
+        font-size: medium;
+    }
+    
+    
+    .btn:hover{
+        padding: 6px 11px;
+    }
+    
+    .btn:active{
+        padding: 7px 12px;
+    }
+        
+    ul{
+        width: 63%;
+    }
+    
+    li{
+        padding: 5px 13px 5px 15px;
+        font-size: large;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        margin-right: 140px;
+    }
+    
+    .btns{
+        position: absolute;
+        left: 71%;
+        padding: 5px 10px;
+        font-size: medium;
+    }
+    
+
+    .btnDisplay{
+        position: absolute;
+        left: 62%;
+    }
+    
+    .btns:hover{
+        padding: 6px 11px;
+    }
+    
+    .btns:active{
+        padding: 7px 12px;
+    }
+    
+} 
+
+ 
+ @media screen and (max-width: 425px){
+        
+    p{
+        font-size: 15px;
+        margin: 20px;
+        margin-bottom: 20px;
+        padding: 7px 10px;
+    }
+    
+    
+    input{
+        margin: 10px;
+        margin-bottom: 20px;
+        margin-right: 0;
+        padding: 3px 7px;
+        width: 30%;
+        font-size: small;
+    
+    }
+    
+    
+    input:hover{
+        padding: 4px 8px;
+    }
+    
+    input:focus{
+        padding: 3px 7px;
+    }
+    
+    
+    .btn{
+        padding: 3px 8px;
+        margin-left: 5px;
+        font-size: small;
+    }
+    
+    
+    .btn:hover{
+        padding: 4px 9px;
+    }
+    
+    .btn:active{
+        padding: 5px 10px;
+    }
+            
+    
+    ul{
+            width: 65%;
+        }
+    
+        li{
+            margin-right: 45px;
+            padding: 3px 10px 3px 13px;
+            font-size: medium;
+            margin-top: 5px;
+            margin-bottom: 7px;
+        }
+    
+        .btns{
+            position: absolute;
+            left: 67%;
+            padding: 3px 8px;
+            font-size: small;
+        }
+    
+        .btnDisplay{
+            position: absolute;
+            left: 54%;
+        }
+
+        .btns:hover{
+            padding: 4px 9px;
+        }
+        
+        .btns:active{
+            padding: 5px 10px;
+        }
+        
+} 
+
+
+
+@media screen and (max-width: 375px){
+    
+    
+    ul{
+        width: 70%;
+    }
+
+    li{
+        margin-right: 50px;
+    }
+
+    .btns{
+        position: absolute;
+        left: 67%;
+    }
+
+    .btnDisplay{
+        position: absolute;
+        left: 52%;
+        
+    }
+}
+
+@media screen and (max-width: 320px){
+    
+    
+    ul{
+        width: 80%;
+    }
+
+    li{
+        margin-right: 50px;
+    }
+
+    .btns{
+        position: absolute;
+        left: 70%;
+    }
+
+    .btnDisplay{
+        position: absolute;
+        left: 54%;
+        
+    }
+} 
+
+
