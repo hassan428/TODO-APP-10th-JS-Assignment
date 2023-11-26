@@ -243,6 +243,86 @@ li{
 
 
 
+@media only screen  and (min-width: 1550px){
+    
+    p{
+        font-size: 50px;
+        margin: 40px;
+        margin-bottom: 50px;
+        padding: 10px 15px;
+    }
+    
+    
+    input{
+        margin: 15px;
+        margin-bottom: 40px;
+        margin-right: 0;
+        padding: 8px 15px;
+        width: 40%;
+        font-size: x-large;
+    
+    }
+    
+    
+    input:hover{
+        padding: 7px 16px;
+    }
+    
+    input:focus{
+        padding: 8px 22px;
+    }
+    
+    
+    .btn{
+        padding: 6px 18px;
+        margin-left: 8px;
+        font-size: x-large;
+    }
+    
+    
+    .btn:hover{
+        padding: 7px 19px;
+    }
+    
+    .btn:active{
+        padding: 8px 20px;
+    }
+        
+    ul{
+        width: 57%;
+    }
+    
+    li{
+        padding: 8px 15px 8px 18px;
+        font-size: x-large;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-right: 140px;
+    }
+    
+    .btns{
+        position: absolute;
+        left: 70%;
+        padding: 6px 20px;
+        font-size: x-large;
+    }
+    
+
+    .btnDisplay{
+        position: absolute;
+        left: 64%;
+    }
+    
+    .btns:hover{
+        padding: 7px 19px;
+    }
+    
+    .btns:active{
+        padding: 8px 20px;
+    }
+    
+} 
+
 
 
 
@@ -328,7 +408,13 @@ li{
 
  
  @media screen and (max-width: 425px){
-        
+      
+    body{
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 222, 176);
+}
     p{
         font-size: 15px;
         margin: 20px;

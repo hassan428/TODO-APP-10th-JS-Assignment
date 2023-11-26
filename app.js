@@ -1,6 +1,26 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyDfe_rK6x0mU9kYN2-xVtN5Mrh0T4JGmFQ",
+    authDomain: "todoapp-c4391.firebaseapp.com",
+    databaseURL: "https://todoapp-c4391-default-rtdb.firebaseio.com",
+    projectId: "todoapp-c4391",
+    storageBucket: "todoapp-c4391.appspot.com",
+    messagingSenderId: "39525377963",
+    appId: "1:39525377963:web:a5aa50119240fb6369d4ee",
+    measurementId: "G-RCGZEV7YXQ"
+  };
+  
+  // Initialize Firebase
+  var app = firebase.initializeApp(firebaseConfig);
+console.log(app);
+console.log(app.database);
+
+
+
+
 
 var input = document.getElementById("input");
 var inputValue = input.value;
+var key = Math.random() * 123456;
 
 function add(){
 
@@ -13,6 +33,11 @@ function add(){
             var liEle = document.createElement("li" );
             var liText = document.createTextNode(input.value);
             liEle.appendChild(liText);
+            var obj = {
+                todo: input.value,
+            }
+
+            firebase.database().ref("users/Todo List/" + Math.round(key)).set(obj);
             
             
             //================Edit Button ==============
@@ -24,7 +49,7 @@ function add(){
             liEle.appendChild(editBtn);
         
         
-            //================Edit Button ==============
+            //================delete Button ==============
             var deleteBtn = document.createElement("button");
             deleteBtn.setAttribute("class", "btns");
             deleteBtn.setAttribute("onclick", "delParticular(this)");
@@ -53,6 +78,7 @@ function add(){
 function del(){
     var ul = document.getElementById("list");
     ul.innerHTML = "";
+    firebase.database().ref("users/Todo List").remove();
 }
 
 
@@ -62,6 +88,11 @@ function edit(e){
 
         if(update[0] != " " ){
             e.parentNode.firstChild.nodeValue = update;
+            var updateObj = {
+                updateTodo: update
+            }
+            firebase.database().ref("users/Todo List/" + Math.round(key)).set(updateObj);
+
         }
         else{
             alert('The first Letter must not be the "Space"');
@@ -75,5 +106,6 @@ function edit(e){
 
 function delParticular(e){
     e.parentNode.remove();
+    firebase.database().ref("users/Todo List/" + Math.round(key)).remove();
 }
 
